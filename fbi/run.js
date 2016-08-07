@@ -1,10 +1,7 @@
 ctx.next = false
 
-// ctx.log(ctx)
-
 const npm = require('global-npm')
-
-let cmdName = ctx.argvs[1]
+const cmdName = ctx.argvs[1]
 
 if (cmdName) {
   ctx.log(`npm script: ${cmdName}`, 1)
@@ -20,5 +17,5 @@ if (cmdName) {
 
   // process.exit(0)
 } else {
-  ctx.log('Usage: fbi new [npm script name]', 0)
+  ctx.log('Usage: fbi run [npm script name]', 0)
 }
