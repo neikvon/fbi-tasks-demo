@@ -1,5 +1,19 @@
 # fbi-tasks-demo
-Tasks demo for fbi
+Tasks demos for [fbi-v2.x](https://github.com/neikvon/fbi)
+
+## Introduction:
+
+- `./fbi/serve.js` Serve static files - `fbi serve`
+- `./fbi/run.js` Run npm scripts - `fbi run [npm script name]`
+
+Note: `fbi ls` to see available `npm scripts`
+
+## Usage:
+
+### First
+```bash
+$ npm i -g fbi
+```
 
 ### Clone
 ```bash
@@ -18,7 +32,15 @@ $ fbi ata *
 # output:
 # FBI => task 'run' added
 # FBI => task 'serve' added
+
+# or
+
+$ fbi ata serve
 ```
+(update: v2.0.5+, the `ata` action will also copy the `node_modules` folder.)
+
+**Now you can use tasks you just added everywhere.**
+
 
 ### Check
 ```bash
@@ -27,8 +49,8 @@ $ fbi ls
 # output:
 # Tasks:
 
-#   run             <global>
-#   serve           <global>
+#   run             -g
+#   serve           -g
 ```
 
 ### Test
@@ -43,25 +65,11 @@ $ fbi serve
 
 ### Update
 ```bash
-$ fbi ata serve.js
+$ fbi ata serve
 
 # output:
 # FBI => task 'serve' updated
 ```
 
-### Install dependencies globally
-```bash
-$ fbi i
 
-# ouput:
-# FBI => npm install
-#       global-npm@^0.3.0
-#       koa@^2.0.0
-#       koa-static@^3.0.0
-#       --save-dev
-#    to:/Users/.../fbi/data/tasks
-# ...
-# FBI => All Dependencies Installed
-```
 
-now you can use tasks you just added everywhere.
