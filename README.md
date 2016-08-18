@@ -3,8 +3,10 @@ Tasks demos for [fbi-v2.x](https://github.com/neikvon/fbi)
 
 ## Introduction:
 
-- `./fbi/serve.js` Serve static files - `fbi serve`
-- `./fbi/run.js` Run npm scripts - `fbi run [npm script name]`
+- `./fbi/serve.js`: Serve static files - `fbi serve`
+- `./fbi/run.js`: Run npm scripts - `fbi run [npm script name]`
+- `./fbi/clone.js`: Clone fbi data repository (tasks & templates)
+- `./fbi/pull.js`:  Update fbi data repository (tasks & templates)
 
 Note: `fbi ls` to see available `npm scripts`
 
